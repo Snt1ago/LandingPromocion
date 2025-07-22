@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Pages Profesionales - Solo $80 USD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-primary">WebPro Landing</div>
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="#servicios"
+            class="text-gray-700 hover:text-primary transition"
+            >Servicios</a
+          >
+          <a href="#precio" class="text-gray-700 hover:text-primary transition"
+            >Precio</a
+          >
+          <a
+            href="#contacto"
+            class="text-gray-700 hover:text-primary transition"
+            >Contacto</a
+          >
+        </nav>
+        <button
+          onclick="scrollToContact()"
+          class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition"
+        >
+          Empezar Ahora
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-20 pb-16 overflow-hidden">
+      <div class="container mx-auto px-4 py-16">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-12 lg:mb-0 fade-in">
+            <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              Tu Landing Page
+              <span class="text-yellow-300">Profesional</span>
+              en 48 Horas
+            </h1>
+            <p class="text-xl mb-8 text-gray-100">
+              Convierte visitantes en clientes con una landing page optimizada,
+              rápida y atractiva. Todo incluido por solo $80 USD.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                onclick="scrollToContact()"
+                class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition transform hover:scale-105"
+              >
+                🚀 Comenzar Mi Proyecto
+              </button>
+              <button
+                onclick="scrollToServices()"
+                class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition"
+              >
+                Ver Qué Incluye
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/2 relative">
+            <div class="floating-animation">
+              <div
+                class="bg-white rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300"
+              >
+                <div class="h-4 bg-gray-200 rounded mb-4"></div>
+                <div class="h-3 bg-primary w-3/4 rounded mb-3"></div>
+                <div class="h-3 bg-gray-200 w-1/2 rounded mb-4"></div>
+                <div
+                  class="bg-yellow-400 h-12 w-full rounded-lg flex items-center justify-center"
+                >
+                  <span class="text-gray-900 font-semibold"
+                    >¡Convierte Aquí!</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="servicios" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Todo Lo Que Necesitas Incluido
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Una solución completa y profesional para hacer crecer tu negocio
+            online
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          >
+            <div
+              class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <span class="text-2xl">🔒</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Certificado SSL</h3>
+            <p class="text-gray-600">
+              Seguridad garantizada con certificado SSL incluido para proteger a
+              tus usuarios y mejorar tu SEO.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <span class="text-2xl">🌐</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Hosting Gratuito</h3>
+            <p class="text-gray-600">
+              Alojamiento web incluido por el primer año. Tu sitio estará online
+              24/7 sin costos adicionales.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          >
+            <div
+              class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <span class="text-2xl">🎨</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Diseño Atractivo</h3>
+            <p class="text-gray-600">
+              Diseño moderno y profesional adaptado a tu marca para causar la
+              mejor primera impresión.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          >
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <span class="text-2xl">📱</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Responsive</h3>
+            <p class="text-gray-600">
+              Perfecta adaptación a móviles, tablets y desktop. Tu sitio se verá
+              perfecto en cualquier dispositivo.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <span class="text-2xl">⚡</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Súper Rápida</h3>
+            <p class="text-gray-600">
+              Optimizada para carga ultrarrápida. Tus visitantes no esperarán y
+              Google te premiará.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          >
+            <div
+              class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <span class="text-2xl">📈</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">SEO Básico</h3>
+            <p class="text-gray-600">
+              Optimización SEO incluida para que Google encuentre tu negocio más
+              fácilmente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precio" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Precio Simple y Transparente
+          </h2>
+          <p class="text-xl text-gray-600">
+            Sin letra pequeña, sin costos ocultos
+          </p>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <div
+            class="bg-white border-4 border-primary rounded-2xl p-8 shadow-xl relative"
+          >
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span
+                class="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-semibold text-sm"
+              >
+                🔥 MEJOR VALOR
+              </span>
+            </div>
+
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Landing Page Completa
+              </h3>
+              <div class="mb-6">
+                <span class="text-6xl font-bold text-primary">$80</span>
+                <span class="text-gray-600 ml-2">USD</span>
+              </div>
+              <div class="text-left space-y-4 mb-8">
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>Certificado SSL incluido</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>Hosting gratuito (1 año)</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>Diseño 100% personalizado</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>Adaptable a móviles</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>Velocidad optimizada</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>SEO básico incluido</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-green-500 mr-3">✓</span>
+                  <span>Entrega en 48 horas</span>
+                </div>
+              </div>
+              <button
+                onclick="scrollToContact()"
+                class="w-full bg-primary text-white py-4 px-8 rounded-full font-semibold hover:bg-secondary transition transform hover:scale-105"
+              >
+                Empezar Ahora
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Proceso Simple en 3 Pasos
+          </h2>
+          <p class="text-xl text-gray-600">
+            De la idea a tu landing page en funcionamiento
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white text-2xl font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Conversación Inicial</h3>
+            <p class="text-gray-600">
+              Hablamos sobre tu negocio, objetivos y preferencias de diseño.
+              Definimos juntos tu visión.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white text-2xl font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Desarrollo y Diseño</h3>
+            <p class="text-gray-600">
+              Creo tu landing page personalizada con todos los elementos
+              incluidos en el servicio.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white text-2xl font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Lanzamiento</h3>
+            <p class="text-gray-600">
+              Tu landing page estará online y lista para convertir visitantes en
+              clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 gradient-bg text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-6">
+            ¿Listo para Hacer Crecer tu Negocio?
+          </h2>
+          <p class="text-xl mb-8 text-gray-100">
+            No pierdas más clientes potenciales. Obtén tu landing page
+            profesional hoy mismo.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+              <h3 class="text-xl font-semibold mb-4">💬 WhatsApp</h3>
+              <p class="mb-4">Escríbeme directamente y empezamos tu proyecto</p>
+              <a
+                href="https://wa.me/1234567890"
+                class="inline-block bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition"
+              >
+                Escribir por WhatsApp
+              </a>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+              <h3 class="text-xl font-semibold mb-4">📧 Email</h3>
+              <p class="mb-4">Envíame los detalles de tu proyecto</p>
+              <a
+                href="mailto:tu@email.com"
+                class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition"
+              >
+                Enviar Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <div class="text-xl font-bold mb-4">WebPro Landing</div>
+        <p class="text-gray-400">Landing Pages Profesionales que Convierten</p>
+        <div class="mt-4 text-sm text-gray-500">
+          © 2025 WebPro Landing. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
