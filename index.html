@@ -3,9 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Pages Profesionales - Solo $80 USD</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SEO Básico Optimizado -->
+    <title>Landing Pages Profesionales - Solo $80 USD | WebPro Landing</title>
+    <meta
+      name="description"
+      content="Crea tu landing page profesional en 48 horas. Certificado SSL, hosting gratuito, diseño responsive y SEO incluido. Todo por solo $80 USD."
+    />
+    <meta
+      name="keywords"
+      content="landing page, diseño web, certificado SSL, hosting gratuito, SEO, responsive, desarrollo web profesional"
+    />
+    <meta name="author" content="WebPro Landing" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://landingpro.sanlaunch.com" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://landingpro.sanlaunch.com" />
+    <meta
+      property="og:title"
+      content="Landing Pages Profesionales - Solo $80 USD"
+    />
+    <meta
+      property="og:description"
+      content="Crea tu landing page profesional en 48 horas. Certificado SSL, hosting gratuito y más por solo $80 USD."
+    />
+    <meta
+      property="og:image"
+      content="https://landingpro.sanlaunch.com/images/og-image.jpg"
+    />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://landingpro.sanlaunch.com" />
+    <meta
+      property="twitter:title"
+      content="Landing Pages Profesionales - Solo $80 USD"
+    />
+    <meta
+      property="twitter:description"
+      content="Crea tu landing page profesional en 48 horas. Certificado SSL, hosting gratuito y más por solo $80 USD."
+    />
+    <meta
+      property="twitter:image"
+      content="https://landingpro.sanlaunch.com/images/twitter-image.jpg"
+    />
+
+    <!-- Preload para mejor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- JSON-LD Schema para SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "WebPro Landing",
+        "description": "Desarrollo de landing pages profesionales con certificado SSL, hosting gratuito y optimización SEO",
+        "url": "https://landingpro.sanlaunch.com",
+        "telephone": "+1234567890",
+        "email": "tu@email.com",
+        "priceRange": "$80",
+        "areaServed": {
+          "@type": "Place",
+          "name": "Internacional"
+        },
+        "serviceType": "Desarrollo Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "80",
+          "priceCurrency": "USD",
+          "availability": "InStock",
+          "validFrom": "2025-01-01"
+        }
+      }
+    </script>
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
@@ -13,25 +95,39 @@
       <div
         class="container mx-auto px-4 py-4 flex justify-between items-center"
       >
-        <div class="text-2xl font-bold text-primary">WebPro Landing</div>
-        <nav class="hidden md:flex space-x-6">
+        <div class="text-2xl font-bold" style="color: var(--primary)">
+          <span itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name">WebPro Landing</span>
+          </span>
+        </div>
+        <nav
+          class="hidden md:flex space-x-6"
+          role="navigation"
+          aria-label="Navegación principal"
+        >
           <a
             href="#servicios"
-            class="text-gray-700 hover:text-primary transition"
+            class="text-gray-700 hover:text-blue-600 transition"
+            aria-label="Ver servicios"
             >Servicios</a
           >
-          <a href="#precio" class="text-gray-700 hover:text-primary transition"
+          <a
+            href="#precio"
+            class="text-gray-700 hover:text-blue-600 transition"
+            aria-label="Ver precio"
             >Precio</a
           >
           <a
             href="#contacto"
-            class="text-gray-700 hover:text-primary transition"
+            class="text-gray-700 hover:text-blue-600 transition"
+            aria-label="Contactar"
             >Contacto</a
           >
         </nav>
         <button
           onclick="scrollToContact()"
-          class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition"
+          class="btn-primary"
+          aria-label="Comenzar proyecto ahora"
         >
           Empezar Ahora
         </button>
@@ -39,10 +135,13 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="gradient-bg text-white pt-20 pb-16 overflow-hidden">
+    <section
+      class="gradient-bg text-white pt-20 pb-16 overflow-hidden"
+      role="banner"
+    >
       <div class="container mx-auto px-4 py-16">
         <div class="flex flex-col lg:flex-row items-center">
-          <div class="lg:w-1/2 mb-12 lg:mb-0 fade-in">
+          <div class="lg:w-1/2 mb-12 lg:mb-0 fade-in loaded">
             <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Tu Landing Page
               <span class="text-yellow-300">Profesional</span>
@@ -55,13 +154,15 @@
             <div class="flex flex-col sm:flex-row gap-4">
               <button
                 onclick="scrollToContact()"
-                class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition transform hover:scale-105"
+                class="btn-yellow"
+                aria-label="Comenzar mi proyecto"
               >
                 🚀 Comenzar Mi Proyecto
               </button>
               <button
                 onclick="scrollToServices()"
-                class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition"
+                class="btn-outline"
+                aria-label="Ver qué incluye el servicio"
               >
                 Ver Qué Incluye
               </button>
@@ -72,9 +173,18 @@
               <div
                 class="bg-white rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300"
               >
-                <div class="h-4 bg-gray-200 rounded mb-4"></div>
-                <div class="h-3 bg-primary w-3/4 rounded mb-3"></div>
-                <div class="h-3 bg-gray-200 w-1/2 rounded mb-4"></div>
+                <div
+                  class="h-4 bg-gray-200 rounded mb-4"
+                  aria-hidden="true"
+                ></div>
+                <div
+                  class="h-3 bg-blue-600 w-3/4 rounded mb-3"
+                  aria-hidden="true"
+                ></div>
+                <div
+                  class="h-3 bg-gray-200 w-1/2 rounded mb-4"
+                  aria-hidden="true"
+                ></div>
                 <div
                   class="bg-yellow-400 h-12 w-full rounded-lg flex items-center justify-center"
                 >
@@ -90,9 +200,9 @@
     </section>
 
     <!-- Features Section -->
-    <section id="servicios" class="py-20 bg-white">
+    <section id="servicios" class="py-20 bg-white" role="main">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16 fade-in">
+        <div class="text-center mb-16 fade-in loaded">
           <h2 class="text-4xl font-bold text-gray-900 mb-4">
             Todo Lo Que Necesitas Incluido
           </h2>
@@ -103,95 +213,95 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          <article
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-blue-600"
           >
             <div
-              class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
             >
-              <span class="text-2xl">🔒</span>
+              <span class="text-2xl" aria-hidden="true">🔒</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">Certificado SSL</h3>
             <p class="text-gray-600">
               Seguridad garantizada con certificado SSL incluido para proteger a
               tus usuarios y mejorar tu SEO.
             </p>
-          </div>
+          </article>
 
-          <div
-            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          <article
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-blue-600"
           >
             <div
               class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
             >
-              <span class="text-2xl">🌐</span>
+              <span class="text-2xl" aria-hidden="true">🌐</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">Hosting Gratuito</h3>
             <p class="text-gray-600">
               Alojamiento web incluido por el primer año. Tu sitio estará online
               24/7 sin costos adicionales.
             </p>
-          </div>
+          </article>
 
-          <div
-            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          <article
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-blue-600"
           >
             <div
               class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
             >
-              <span class="text-2xl">🎨</span>
+              <span class="text-2xl" aria-hidden="true">🎨</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">Diseño Atractivo</h3>
             <p class="text-gray-600">
               Diseño moderno y profesional adaptado a tu marca para causar la
               mejor primera impresión.
             </p>
-          </div>
+          </article>
 
-          <div
-            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          <article
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-blue-600"
           >
             <div
               class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
             >
-              <span class="text-2xl">📱</span>
+              <span class="text-2xl" aria-hidden="true">📱</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">Responsive</h3>
             <p class="text-gray-600">
               Perfecta adaptación a móviles, tablets y desktop. Tu sitio se verá
               perfecto en cualquier dispositivo.
             </p>
-          </div>
+          </article>
 
-          <div
-            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          <article
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-blue-600"
           >
             <div
               class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
             >
-              <span class="text-2xl">⚡</span>
+              <span class="text-2xl" aria-hidden="true">⚡</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">Súper Rápida</h3>
             <p class="text-gray-600">
               Optimizada para carga ultrarrápida. Tus visitantes no esperarán y
               Google te premiará.
             </p>
-          </div>
+          </article>
 
-          <div
-            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-primary"
+          <article
+            class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 hover:border-blue-600"
           >
             <div
               class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
             >
-              <span class="text-2xl">📈</span>
+              <span class="text-2xl" aria-hidden="true">📈</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">SEO Básico</h3>
             <p class="text-gray-600">
               Optimización SEO incluida para que Google encuentre tu negocio más
               fácilmente.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -209,8 +319,10 @@
         </div>
 
         <div class="max-w-md mx-auto">
-          <div
-            class="bg-white border-4 border-primary rounded-2xl p-8 shadow-xl relative"
+          <article
+            class="bg-white border-4 border-blue-600 rounded-2xl p-8 shadow-xl relative"
+            itemscope
+            itemtype="https://schema.org/Offer"
           >
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span
@@ -221,51 +333,60 @@
             </div>
 
             <div class="text-center">
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" itemprop="name">
                 Landing Page Completa
               </h3>
               <div class="mb-6">
-                <span class="text-6xl font-bold text-primary">$80</span>
-                <span class="text-gray-600 ml-2">USD</span>
+                <span class="text-6xl font-bold text-blue-600" itemprop="price"
+                  >$80</span
+                >
+                <span
+                  class="text-gray-600 ml-2"
+                  itemprop="priceCurrency"
+                  content="USD"
+                  >USD</span
+                >
               </div>
               <div class="text-left space-y-4 mb-8">
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>Certificado SSL incluido</span>
                 </div>
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>Hosting gratuito (1 año)</span>
                 </div>
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>Diseño 100% personalizado</span>
                 </div>
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>Adaptable a móviles</span>
                 </div>
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>Velocidad optimizada</span>
                 </div>
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>SEO básico incluido</span>
                 </div>
                 <div class="flex items-center">
-                  <span class="text-green-500 mr-3">✓</span>
+                  <span class="text-green-500 mr-3" aria-hidden="true">✓</span>
                   <span>Entrega en 48 horas</span>
                 </div>
               </div>
               <button
                 onclick="scrollToContact()"
-                class="w-full bg-primary text-white py-4 px-8 rounded-full font-semibold hover:bg-secondary transition transform hover:scale-105"
+                class="btn-primary w-full"
+                style="width: 100%; padding: 1rem 2rem"
+                aria-label="Empezar proyecto ahora"
               >
                 Empezar Ahora
               </button>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -283,9 +404,10 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="text-center">
+          <article class="text-center">
             <div
-              class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              style="background-color: var(--primary)"
             >
               <span class="text-white text-2xl font-bold">1</span>
             </div>
@@ -294,11 +416,12 @@
               Hablamos sobre tu negocio, objetivos y preferencias de diseño.
               Definimos juntos tu visión.
             </p>
-          </div>
+          </article>
 
-          <div class="text-center">
+          <article class="text-center">
             <div
-              class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              style="background-color: var(--primary)"
             >
               <span class="text-white text-2xl font-bold">2</span>
             </div>
@@ -307,11 +430,12 @@
               Creo tu landing page personalizada con todos los elementos
               incluidos en el servicio.
             </p>
-          </div>
+          </article>
 
-          <div class="text-center">
+          <article class="text-center">
             <div
-              class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+              style="background-color: var(--primary)"
             >
               <span class="text-white text-2xl font-bold">3</span>
             </div>
@@ -320,13 +444,17 @@
               Tu landing page estará online y lista para convertir visitantes en
               clientes.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contacto" class="py-20 gradient-bg text-white">
+    <section
+      id="contacto"
+      class="py-20 gradient-bg text-white"
+      role="contentinfo"
+    >
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-4xl font-bold mb-6">
@@ -342,8 +470,11 @@
               <h3 class="text-xl font-semibold mb-4">💬 WhatsApp</h3>
               <p class="mb-4">Escríbeme directamente y empezamos tu proyecto</p>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20una%20landing%20page%20profesional"
                 class="inline-block bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition"
+                aria-label="Contactar por WhatsApp"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Escribir por WhatsApp
               </a>
@@ -353,8 +484,9 @@
               <h3 class="text-xl font-semibold mb-4">📧 Email</h3>
               <p class="mb-4">Envíame los detalles de tu proyecto</p>
               <a
-                href="mailto:tu@email.com"
+                href="mailto:tu@email.com?subject=Consulta%20Landing%20Page&body=Hola,%20estoy%20interesado%20en%20crear%20una%20landing%20page%20profesional."
                 class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition"
+                aria-label="Enviar email"
               >
                 Enviar Email
               </a>
@@ -365,7 +497,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8" role="contentinfo">
       <div class="container mx-auto px-4 text-center">
         <div class="text-xl font-bold mb-4">WebPro Landing</div>
         <p class="text-gray-400">Landing Pages Profesionales que Convierten</p>
