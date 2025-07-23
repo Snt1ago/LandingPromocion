@@ -49,18 +49,18 @@ document.querySelectorAll(".lazy, .fade-in").forEach((el) => {
 });
 
 // Preload de imágenes críticas
-function preloadImages() {
-  const imageUrls = ["/images/hero-bg.jpg", "/images/features-bg.jpg"];
+// function preloadImages() {
+//   const imageUrls = ["/images/hero-bg.jpg", "/images/features-bg.jpg"];
 
-  imageUrls.forEach((url) => {
-    const img = new Image();
-    img.src = url;
-  });
-}
+//   imageUrls.forEach((url) => {
+//     const img = new Image();
+//     img.src = url;
+//   });
+// }
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", function () {
-  preloadImages();
+  // preloadImages();
 
   // Agregar eventos de tracking a botones principales
   const ctaButtons = document.querySelectorAll(
@@ -84,15 +84,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Service Worker para cache offline (opcional)
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-    navigator.serviceWorker
-      .register("/sw.js")
-      .then(function (registration) {
-        console.log("SW registered: ", registration);
-      })
-      .catch(function (registrationError) {
-        console.log("SW registration failed: ", registrationError);
-      });
-  });
-}
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", function () {
+//     navigator.serviceWorker
+//       .register("/sw.js")
+//       .then(function (registration) {
+//         console.log("SW registered: ", registration);
+//       })
+//       .catch(function (registrationError) {
+//         console.log("SW registration failed: ", registrationError);
+//       });
+//   });
+// }
